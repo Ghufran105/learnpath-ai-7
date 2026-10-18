@@ -23,8 +23,8 @@ PROVIDERS = {
     "Groq": {
         "key_name": "GROQ_API_KEY",
         "models": {
-            "Llama 3.3 70B (best on Groq)": "llama-3.3-70b-versatile",
-            "Llama 3.1 8B (fastest)": "llama-3.1-8b-instant",
+            "GPT-OSS 120B (best on Groq)": "openai/gpt-oss-120b",
+            "GPT-OSS 20B (fastest)": "openai/gpt-oss-20b",
         },
     },
 }
@@ -48,6 +48,8 @@ def _friendly(exc: Exception) -> str:
         return "The API key was rejected. Check that you pasted the right key for this provider."
     if status == 429 or "ratelimit" in name or "rate limit" in text:
         return "Rate limit reached. Wait a minute and try again, or switch model/provider."
+    if "decommission" in text or "deprecat" in text:
+        return "The provider has retired this model. Pick another model in the sidebar (or update llm.py)."
     if status == 404 or "not_found" in text or ("model" in text and "not" in text and "exist" in text):
         return "This model name was not accepted. Pick another model in the sidebar (or update llm.py)."
     if "connection" in name or "timeout" in name:
@@ -94,11 +96,17 @@ class LLM:
         from groq import Groq
 
         client = Groq(api_key=self.api_key)
+        extra = {}
+        budget = max_tokens
+        if self.model.startswith("openai/gpt-oss"):
+            extra["reasoning_effort"] = "low"  # short thinking, faster and cheaper
+            budget += 1000                      # thinking tokens count toward the limit
         resp = client.chat.completions.create(
             model=self.model,
             messages=[{"role": "system", "content": system}, *messages],
-            max_tokens=max_tokens,
+            max_tokens=budget,
             temperature=0.4,
+            **extra,
         )
         return resp.choices[0].message.content or ""
 
