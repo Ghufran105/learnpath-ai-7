@@ -1,0 +1,112 @@
+{
+  "Python": {
+    "description": "The easiest first language. Used in AI, automation, web and security scripting.",
+    "courses": [
+      {"title": "CS50's Introduction to Programming with Python", "platform": "Harvard (CS50)", "url": "https://cs50.harvard.edu/python/", "level": "Beginner", "price": "Free", "format": "Video", "hours": 40, "has_labs": true, "why": "Short lectures, then real problem sets. Very beginner friendly."},
+      {"title": "Python for Everybody", "platform": "py4e.com (also on Coursera)", "url": "https://www.py4e.com/", "level": "Beginner", "price": "Free", "format": "Mixed", "hours": 40, "has_labs": true, "why": "Free book, videos and exercises from Dr. Chuck. Slow and clear."},
+      {"title": "Scientific Computing with Python", "platform": "freeCodeCamp", "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/", "level": "Beginner", "price": "Free", "format": "Interactive", "hours": 30, "has_labs": true, "why": "Write code in the browser. No setup needed."},
+      {"title": "Automate the Boring Stuff with Python", "platform": "automatetheboringstuff.com", "url": "https://automatetheboringstuff.com/", "level": "Beginner", "price": "Free", "format": "Text", "hours": 25, "has_labs": true, "why": "Learn by building small useful scripts (files, web, Excel)."},
+      {"title": "CS50's Introduction to Artificial Intelligence with Python", "platform": "Harvard (CS50)", "url": "https://cs50.harvard.edu/ai/", "level": "Intermediate", "price": "Free", "format": "Video", "hours": 40, "has_labs": true, "why": "Next step after basics. Search, ML and neural networks with projects."}
+    ],
+    "notes": [
+      {"title": "Official Python Tutorial", "url": "https://docs.python.org/3/tutorial/", "note": "Accurate and free. Good to read next to any course."},
+      {"title": "Automate the Boring Stuff (online book)", "url": "https://automatetheboringstuff.com/", "note": "Whole book is free to read online."}
+    ],
+    "labs": [
+      {"title": "Exercism - Python track", "url": "https://exercism.org/tracks/python", "note": "Small exercises with free human-style feedback."},
+      {"title": "HackerRank - Python", "url": "https://www.hackerrank.com/domains/python", "note": "Practice problems sorted by difficulty."}
+    ]
+  },
+  "C++": {
+    "description": "Fast, powerful language for systems, games and competitive programming.",
+    "courses": [
+      {"title": "Learn C++", "platform": "learncpp.com", "url": "https://www.learncpp.com/", "level": "Beginner", "price": "Free", "format": "Text", "hours": 60, "has_labs": true, "why": "The most complete free C++ tutorial. Quizzes at the end of lessons."},
+      {"title": "CS50x: Introduction to Computer Science", "platform": "Harvard (CS50)", "url": "https://cs50.harvard.edu/x/", "level": "Beginner", "price": "Free", "format": "Video", "hours": 100, "has_labs": true, "why": "Teaches C first (memory and pointers). That makes C++ much easier later."},
+      {"title": "Learn C++", "platform": "Codecademy", "url": "https://www.codecademy.com/learn/learn-c-plus-plus", "level": "Beginner", "price": "Freemium", "format": "Interactive", "hours": 25, "has_labs": true, "why": "Type code in the browser. Some parts need a paid plan."},
+      {"title": "CS106L: Standard C++ Programming", "platform": "Stanford", "url": "https://web.stanford.edu/class/cs106l/", "level": "Intermediate", "price": "Free", "format": "Video", "hours": 30, "has_labs": true, "why": "Modern C++ (STL, templates, move semantics) with assignments."}
+    ],
+    "notes": [
+      {"title": "cppreference", "url": "https://en.cppreference.com/w/", "note": "The standard reference. Search any function here."},
+      {"title": "C++ Core Guidelines", "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines", "note": "Best-practice rules by the language creators. Advanced reading."}
+    ],
+    "labs": [
+      {"title": "Exercism - C++ track", "url": "https://exercism.org/tracks/cpp", "note": "Exercises that get harder step by step."},
+      {"title": "HackerRank - C++", "url": "https://www.hackerrank.com/domains/cpp", "note": "Language-specific practice problems."},
+      {"title": "Codeforces", "url": "https://codeforces.com/", "note": "Contest problems. Good once you know the basics."}
+    ]
+  },
+  "Cyber Security": {
+    "description": "Protecting systems and finding weaknesses legally. Learn by doing in safe labs.",
+    "courses": [
+      {"title": "Google Cybersecurity Professional Certificate", "platform": "Coursera", "url": "https://www.coursera.org/professional-certificates/google-cybersecurity", "level": "Beginner", "price": "Free to audit", "format": "Video", "hours": 180, "has_labs": true, "why": "Full beginner path (risk, Linux, SQL, SIEM). Certificate costs money, learning can be audited."},
+      {"title": "TryHackMe Learning Paths", "platform": "TryHackMe", "url": "https://tryhackme.com/paths", "level": "Beginner", "price": "Freemium", "format": "Interactive", "hours": 40, "has_labs": true, "why": "Hands-on rooms in the browser. Many rooms are free, some need a subscription."},
+      {"title": "Professor Messer - CompTIA Security+ videos", "platform": "professormesser.com", "url": "https://www.professormesser.com/", "level": "Beginner", "price": "Free", "format": "Video", "hours": 30, "has_labs": false, "why": "Free full video course for the Security+ exam. Open the Security+ section."},
+      {"title": "Web Security Academy", "platform": "PortSwigger", "url": "https://portswigger.net/web-security", "level": "Intermediate", "price": "Free", "format": "Interactive", "hours": 60, "has_labs": true, "why": "Best free web-hacking course. Every topic has real labs."}
+    ],
+    "notes": [
+      {"title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "note": "The 10 most common web security risks, explained."},
+      {"title": "OWASP Cheat Sheet Series", "url": "https://cheatsheetseries.owasp.org/", "note": "Short practical guides for defenders."},
+      {"title": "MITRE ATT&CK", "url": "https://attack.mitre.org/", "note": "Reference of attacker techniques. Read, do not memorize."}
+    ],
+    "labs": [
+      {"title": "OverTheWire - Bandit", "url": "https://overthewire.org/wargames/bandit/", "note": "Learn Linux commands by solving levels. Start here."},
+      {"title": "picoCTF", "url": "https://picoctf.org/", "note": "Beginner friendly capture-the-flag challenges."},
+      {"title": "PortSwigger Web Security Labs", "url": "https://portswigger.net/web-security/all-labs", "note": "Free vulnerable apps to practice on."},
+      {"title": "Hack The Box Academy", "url": "https://academy.hackthebox.com/", "note": "Guided modules with labs. Some modules are paid."}
+    ]
+  },
+  "Web Development": {
+    "description": "Build websites and web apps: HTML, CSS, JavaScript and backends.",
+    "courses": [
+      {"title": "The Odin Project", "platform": "theodinproject.com", "url": "https://www.theodinproject.com/", "level": "Beginner", "price": "Free", "format": "Text", "hours": 200, "has_labs": true, "why": "Project-based path from zero to full-stack. Needs self-discipline."},
+      {"title": "freeCodeCamp Learn", "platform": "freeCodeCamp", "url": "https://www.freecodecamp.org/learn/", "level": "Beginner", "price": "Free", "format": "Interactive", "hours": 100, "has_labs": true, "why": "Code in the browser with instant feedback and projects."},
+      {"title": "Learn web development", "platform": "MDN", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development", "level": "Beginner", "price": "Free", "format": "Text", "hours": 60, "has_labs": true, "why": "Clear and accurate guides from the makers of the web docs."},
+      {"title": "CS50's Web Programming with Python and JavaScript", "platform": "Harvard (CS50)", "url": "https://cs50.harvard.edu/web/", "level": "Intermediate", "price": "Free", "format": "Video", "hours": 60, "has_labs": true, "why": "Django, JavaScript, APIs and deployment with graded projects."}
+    ],
+    "notes": [
+      {"title": "MDN Web Docs", "url": "https://developer.mozilla.org/", "note": "Reference for HTML, CSS and JavaScript."},
+      {"title": "web.dev Learn", "url": "https://web.dev/learn", "note": "Short courses on CSS, accessibility and performance."}
+    ],
+    "labs": [
+      {"title": "Frontend Mentor", "url": "https://www.frontendmentor.io/", "note": "Real design challenges to build and compare."},
+      {"title": "JavaScript30", "url": "https://javascript30.com/", "note": "30 small JavaScript projects (video course is free)."}
+    ]
+  },
+  "Machine Learning": {
+    "description": "Teach computers to learn from data. Needs basic Python and some math.",
+    "courses": [
+      {"title": "Machine Learning Specialization", "platform": "Coursera (Andrew Ng)", "url": "https://www.coursera.org/specializations/machine-learning-introduction", "level": "Beginner", "price": "Free to audit", "format": "Video", "hours": 80, "has_labs": true, "why": "The standard first ML course. Intuition first, then code labs."},
+      {"title": "Machine Learning Crash Course", "platform": "Google", "url": "https://developers.google.com/machine-learning/crash-course", "level": "Beginner", "price": "Free", "format": "Mixed", "hours": 15, "has_labs": true, "why": "Short, practical, with exercises. Good as a quick start."},
+      {"title": "Practical Deep Learning for Coders", "platform": "fast.ai", "url": "https://course.fast.ai/", "level": "Intermediate", "price": "Free", "format": "Video", "hours": 60, "has_labs": true, "why": "Build real models first, learn theory after. Needs Python."},
+      {"title": "CS229: Machine Learning", "platform": "Stanford", "url": "https://cs229.stanford.edu/", "level": "Advanced", "price": "Free", "format": "Video", "hours": 100, "has_labs": true, "why": "Math-heavy university course with full lecture notes."}
+    ],
+    "notes": [
+      {"title": "scikit-learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html", "note": "Explains algorithms with working code."},
+      {"title": "Google ML Glossary", "url": "https://developers.google.com/machine-learning/glossary", "note": "Quick definitions for ML words."},
+      {"title": "Stanford CS229 lecture notes", "url": "https://cs229.stanford.edu/", "note": "Detailed notes and handouts (advanced)."}
+    ],
+    "labs": [
+      {"title": "Kaggle Learn", "url": "https://www.kaggle.com/learn", "note": "Short free courses with notebooks you run online."},
+      {"title": "Kaggle Competitions", "url": "https://www.kaggle.com/competitions", "note": "Real datasets and practice competitions."}
+    ]
+  },
+  "Data Structures & Algorithms": {
+    "description": "How to organize data and solve problems fast. Core of coding interviews.",
+    "courses": [
+      {"title": "Algorithms (Khan Academy)", "platform": "Khan Academy", "url": "https://www.khanacademy.org/computing/computer-science/algorithms", "level": "Beginner", "price": "Free", "format": "Interactive", "hours": 15, "has_labs": true, "why": "Gentle visual start: searching, sorting, recursion."},
+      {"title": "Algorithms, Part I", "platform": "Princeton on Coursera", "url": "https://www.coursera.org/learn/algorithms-part1", "level": "Intermediate", "price": "Free to audit", "format": "Video", "hours": 40, "has_labs": true, "why": "Strong fundamentals. Examples use Java, ideas apply to any language."},
+      {"title": "NeetCode Roadmap", "platform": "NeetCode", "url": "https://neetcode.io/roadmap", "level": "Intermediate", "price": "Free", "format": "Video", "hours": 80, "has_labs": true, "why": "Topic-by-topic path with practice problems. Needs one language already."},
+      {"title": "6.006 Introduction to Algorithms (Spring 2020)", "platform": "MIT OpenCourseWare", "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/", "level": "Advanced", "price": "Free", "format": "Video", "hours": 60, "has_labs": true, "why": "University level with proofs, problem sets and lecture notes."}
+    ],
+    "notes": [
+      {"title": "CP-Algorithms", "url": "https://cp-algorithms.com/", "note": "Clear written explanations of many algorithms."},
+      {"title": "VisuAlgo", "url": "https://visualgo.net/", "note": "Animations of data structures and algorithms."},
+      {"title": "Big-O Cheat Sheet", "url": "https://www.bigocheatsheet.com/", "note": "One-page time complexity table."}
+    ],
+    "labs": [
+      {"title": "LeetCode Problemset", "url": "https://leetcode.com/problemset/", "note": "Filter by topic and difficulty. Start with Easy."},
+      {"title": "NeetCode Practice", "url": "https://neetcode.io/practice", "note": "Curated problem list with video solutions."},
+      {"title": "HackerRank - Data Structures", "url": "https://www.hackerrank.com/domains/data-structures", "note": "Structured practice by data structure."}
+    ]
+  }
+}
