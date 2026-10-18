@@ -1,0 +1,10 @@
+# secrets - NEVER upload these
+.streamlit/secrets.toml
+.env
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
